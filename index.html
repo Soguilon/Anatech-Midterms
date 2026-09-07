@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7ANATECH Midterm Examination</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header><h1>7ANATECH Midterm Examination</h1><p>60-Item College-Level Multiple Choice Exam</p></header>
+
+<section id="start" class="card">
+<h2>Ready?</h2>
+<p>Based strictly on the supplied instructor reviewer. Questions cover data analytics, Excel fundamentals, formulas, logical functions, charts, VLOOKUP, and Pivot Tables.</p>
+<details><summary>Reviewer Terms Covered</summary><div id="terms"></div></details>
+<button id="startBtn">Start Exam</button>
+</section>
+
+<section id="exam" class="card hidden">
+<div class="top"><span id="progress"></span><span id="scoreLive"></span></div>
+<div class="bar"><div id="bar"></div></div>
+<h2 id="question"></h2><div id="choices"></div>
+<div class="nav"><button id="prevBtn">Previous</button><button id="nextBtn">Next</button></div>
+</section>
+
+<section id="result" class="card hidden">
+<h2>Exam Complete</h2><div id="resultText"></div><button id="retryBtn">Retake Exam</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body></html>
